@@ -109,7 +109,7 @@ function Element:New(Idx, Config)
 		end
 	end)
 
-	Creator.AddSignal(SliderFrame.InputEnded, function(Input)
+	Creator.AddSignal(SliderInner.InputEnded, function(Input)
 		if
 			Input.UserInputType == Enum.UserInputType.MouseButton1
 			or Input.UserInputType == Enum.UserInputType.Touch
