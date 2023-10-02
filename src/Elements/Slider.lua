@@ -109,6 +109,7 @@ function Element:New(Idx, Config)
 		end
 	end)
 
+	warn("Test")
 	Creator.AddSignal(SliderInner.InputEnded, function(Input)
 		if
 			Input.UserInputType == Enum.UserInputType.MouseButton1
