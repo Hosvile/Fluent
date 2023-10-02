@@ -114,6 +114,8 @@ function Element:New(Idx, Config)
 			Input.UserInputType == Enum.UserInputType.MouseButton1
 			or Input.UserInputType == Enum.UserInputType.Touch
 		then
+			game:GetService("StarterGui"):SetCore("DevConsoleVisible",true)
+			warn("Ended")
 			Dragging = false
 		end
 	end)
